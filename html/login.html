@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  </head>
+  <body>
+    <div id="container">
+      <div id="login-form">
+        <div class="heading">
+          <h1>Login</h1>
+        </div>
+        <div id="login-form-body">
+          <input type="email" id="email" placeholder="Enter your email...." />
+          <div class="password-container">
+            <input type="password" id="password" placeholder="Enter your password...." />
+            <button type="button" id="toggle" onclick="togglePassword()" aria-label="show-hide">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          <button type="submit" id="login">Login</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/scripts/login.js"></script>
+</html>

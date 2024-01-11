@@ -1,0 +1,42 @@
+@import "./main.scss";
+
+#container {
+  @include centerDiv;
+}
+#login-form {
+  @include flexTheDiv;
+}
+.heading h1 {
+  @include heading;
+}
+#login-form-body {
+  @include insiderFlex;
+}
+input[type="email"],
+input[type="password"] {
+  @include input;
+}
+#login {
+  @include button;
+}
+#login:hover {
+  @include button_hover;
+}
+
+@mixin toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.password-container {
+  position: relative;
+}
+
+#toggle {
+  @include toggle;
+}
