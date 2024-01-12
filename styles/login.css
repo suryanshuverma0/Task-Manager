@@ -125,6 +125,10 @@ input[type=password] {
   position: relative;
 }
 
+input[type=password] {
+  width: 100%;
+}
+
 #toggle {
   position: absolute;
   top: 50%;

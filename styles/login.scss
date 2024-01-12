@@ -36,7 +36,9 @@ input[type="password"] {
 .password-container {
   position: relative;
 }
-
+input[type="password"] {
+  width: 100%;
+}
 #toggle {
   @include toggle;
 }
