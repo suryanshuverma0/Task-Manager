@@ -89,3 +89,31 @@ body {
 @include button_hover;
 }
 
+#task-list {
+  @include insiderFlex;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  @include insiderFlex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+  @include button;
+  background-color: red;
+}
+
+li button:hover {
+  @include button_hover;
+  background-color: darkred;
+}
